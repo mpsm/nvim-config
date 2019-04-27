@@ -24,6 +24,12 @@ endif
 
 " GENERAL SETTINGS "
 filetype plugin indent on
+set mouse=a
+set number
+set nowrap
+set encoding=utf-8
+
+" SYNTAX SETTINGS "
 syntax enable
 
 " APPEARANCE "
