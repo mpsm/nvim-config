@@ -10,13 +10,18 @@ if dein#load_state('~/.cache/dein')
 " PLUGINS "
 	call dein#add('vim-airline/vim-airline')
 	call dein#add('vim-airline/vim-airline-themes')
+
 	call dein#add('tpope/vim-fugitive')
 	call dein#add('scrooloose/nerdtree')
 	call dein#add('vim-scripts/DirDiff.vim')
+
 	call dein#add('kergoth/vim-bitbake')
 	call dein#add('dag/vim-fish')
+
 	call dein#add('ntpeters/vim-better-whitespace.git')
 	call dein#add('Raimondi/delimitMate')
+	call dein#add('Shougo/deoplete.nvim')
+	call dein#add('zchee/deoplete-clang')
 " PLUGINS END "
 
 	call dein#end()
@@ -33,6 +38,10 @@ set mouse=a
 set number
 set nowrap
 set encoding=utf-8
+
+" SYSTEM SETTINGS "
+let g:python_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/usr/bin/python3'
 
 " SYNTAX SETTINGS "
 syntax enable
@@ -55,3 +64,8 @@ set diffopt+=vertical
 " WHITESPACE "
 let g:better_whitespace_enabled=1
 let g:strip_whitespace_on_save=1
+
+" CODE COMPLETION "
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources#clang#libclang_path = '/usr/lib/llvm-3.8/lib/libclang.so'
+let g:deoplete#sources#clang#clang_header = '/usr/lib/llvm-3.8'
