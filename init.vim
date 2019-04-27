@@ -10,7 +10,7 @@ if dein#load_state('~/.cache/dein')
 " PLUGINS "
 	call dein#add('vim-airline/vim-airline')
 	call dein#add('vim-airline/vim-airline-themes')
-
+	call dein#add('tpope/vim-fugitive')
 " PLUGINS END "
 
 	call dein#end()
