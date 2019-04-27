@@ -11,6 +11,7 @@ if dein#load_state('~/.cache/dein')
 	call dein#add('vim-airline/vim-airline')
 	call dein#add('vim-airline/vim-airline-themes')
 	call dein#add('tpope/vim-fugitive')
+	call dein#add('scrooloose/nerdtree')
 " PLUGINS END "
 
 	call dein#end()
